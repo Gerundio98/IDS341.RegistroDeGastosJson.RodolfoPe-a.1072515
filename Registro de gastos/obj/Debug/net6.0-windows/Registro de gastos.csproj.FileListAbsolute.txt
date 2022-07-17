@@ -1,0 +1,21 @@
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.csproj.AssemblyReference.cache
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro_de_gastos.Categoríacs.resources
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro_de_gastos.Concepto.resources
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro_de_gastos.Form1.resources
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.csproj.GenerateResource.cache
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.AssemblyInfoInputs.cache
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.AssemblyInfo.cs
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.csproj.CoreCompileInputs.cache
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Registro de gastos.exe
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Registro de gastos.deps.json
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Registro de gastos.runtimeconfig.json
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Registro de gastos.dll
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Registro de gastos.pdb
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.csproj.CopyComplete
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.dll
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\refint\Registro de gastos.dll
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.pdb
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\Registro de gastos.genruntimeconfig.cache
+C:\Users\Rodolfo Peña\source\repos\Registro de gastos\Registro de gastos\obj\Debug\net6.0-windows\ref\Registro de gastos.dll
