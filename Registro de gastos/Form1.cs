@@ -244,7 +244,7 @@ namespace Registro_de_gastos
                 gastoList = JsonConvert.DeserializeObject<List<clssGasto>>(json);
                 for (int i = 0; i < gastoList.Count; i++)
                 {
-                    if (gastoList[j].Nombre.ToString() == txtbNombreDelGasto.Text)
+                    if (gastoList[i].Nombre.ToString() == txtbNombreDelGasto.Text)
                     {
                         gastoList.Remove(gastoList[i]);
                         MessageBox.Show($"El gasto {txtbNombreDelGasto.Text} fue eliminado correctamente.");
