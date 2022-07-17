@@ -9,7 +9,7 @@ namespace Registro_de_gastos
         int b = 1;
         List<clssGasto> gastoList = new List<clssGasto>();
         List<clssConcepto> conceptoList = new List<clssConcepto>();
-        List<clssCategoría> categoríaList = new List<clssCategoría>();
+        List<clssCategorÃ­a> categorÃ­aList = new List<clssCategorÃ­a>();
         DateTime FechaLabel = DateTime.Now;
         
         public Form1()
@@ -32,20 +32,20 @@ namespace Registro_de_gastos
             }
             var auxList = new List<string> { };
                 json = string.Empty;
-                pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\Categorías.json";
+                pathFile = $"{AppDomain.CurrentDomain.BaseDirectory}\\CategorÃ­as.json";
                 if (File.Exists(pathFile))
                 {
                     json = File.ReadAllText(pathFile, Encoding.UTF8);
-                    categoríaList = JsonConvert.DeserializeObject<List<clssCategoría>>(json);
-                    for (int i = 0; i < categoríaList.Count; i++)
+                    categorÃ­aList = JsonConvert.DeserializeObject<List<clssCategorÃ­a>>(json);
+                    for (int i = 0; i < categorÃ­aList.Count; i++)
                     {
-                        if (categoríaList[i].Visibilidad == true)
+                        if (categorÃ­aList[i].Visibilidad == true)
                         {
-                            auxList.Add(categoríaList[i].Nombre);
+                            auxList.Add(categorÃ­aList[i].Nombre);
                         }
                     }
                 }
-                cbCategoría.DataSource = auxList;
+                cbCategorÃ­a.DataSource = auxList;
 
                 auxList = new List<string> { };
                 json = string.Empty;
@@ -68,7 +68,7 @@ namespace Registro_de_gastos
             private void BorradoCamposRellenables()
         {
             txtbCantidad.Text = string.Empty;
-            cbCategoría.SelectedItem=null;
+            cbCategorÃ­a.SelectedItem=null;
             cbConcepto.SelectedItem = null;
             dtpFecha.Text=string.Empty;
             txtbID.Text = string.Empty;
@@ -80,7 +80,7 @@ namespace Registro_de_gastos
             public Guid ID { get; set; }
             public string Nombre { get; set; }
             public string Concepto { get; set; }
-            public string Categoría { get; set; }
+            public string CategorÃ­a { get; set; }
             public DateTime Fecha { get; set; }
             public int Cantidad { get; set; }
             public int Monto { get; set; }
@@ -94,7 +94,7 @@ namespace Registro_de_gastos
             var vGasto = new clssGasto()
             {
                 Concepto = cbConcepto.SelectedItem.ToString(),
-                Categoría = cbCategoría.SelectedItem.ToString(),
+                CategorÃ­a = cbCategorÃ­a.SelectedItem.ToString(),
                 Fecha = dtpFecha.Value,
                 Cantidad = int.Parse(txtbCantidad.Text),
                 Monto = int.Parse(txtbMonto.Text),
@@ -152,9 +152,9 @@ namespace Registro_de_gastos
             var oForm = new Concepto();
             oForm.Show();
         }
-        private void btnCategoría_Click(object sender, EventArgs e)
+        private void btnCategorÃ­a_Click(object sender, EventArgs e)
         {
-            var oForm = new Categoríacs();
+            var oForm = new CategorÃ­acs();
             oForm.Show();
         }
         private void bttnAgregar_Click(object sender, EventArgs e)
@@ -170,29 +170,29 @@ namespace Registro_de_gastos
         {
             public Guid ID { get; set; }
             public string Nombre { get; set; }
-            public string Descripción { get; set; }
-            public DateTime Fecha_de_creación { get; set; }
+            public string DescripciÃ³n { get; set; }
+            public DateTime Fecha_de_creaciÃ³n { get; set; }
             public bool Visibilidad { get; set; }
         }
         private void cbConcepto_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-        private void cbCategoría_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbCategorÃ­a_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
         private void cbConcepto_Click(object sender, EventArgs e)
         {
         }
-        public class clssCategoría
+        public class clssCategorÃ­a
         {
             public Guid ID { get; set; }
             public string Nombre { get; set; }
-            public string Descripción { get; set; }
-            public DateTime Fecha_de_creación { get; set; }
+            public string DescripciÃ³n { get; set; }
+            public DateTime Fecha_de_creaciÃ³n { get; set; }
             public bool Visibilidad { get; set; }
         }
-        private void cbCategoría_Click(object sender, EventArgs e)
+        private void cbCategorÃ­a_Click(object sender, EventArgs e)
         {
         }
         private void bttnBuscar_Click(object sender, EventArgs e)
@@ -211,7 +211,7 @@ namespace Registro_de_gastos
                     {
                         bttnEliminar.Enabled = true;
                         cbConcepto.SelectedItem = gastoList[i].Concepto.ToString();
-                        cbCategoría.SelectedItem = gastoList[i].Categoría.ToString();
+                        cbCategorÃ­a.SelectedItem = gastoList[i].CategorÃ­a.ToString();
                         dtpFecha.Value = gastoList[i].Fecha;
                         txtbCantidad.Text = gastoList[i].Cantidad.ToString();
                         txtbMonto.Text = gastoList[i].Monto.ToString();
@@ -228,7 +228,7 @@ namespace Registro_de_gastos
             }
             else
             {
-                MessageBox.Show($"Aún no ha ingresado ningun dato.");
+                MessageBox.Show($"AÃºn no ha ingresado ningun dato.");
             }
         }
 
@@ -242,11 +242,11 @@ namespace Registro_de_gastos
             {
                 json = File.ReadAllText(pathFile, Encoding.UTF8);
                 gastoList = JsonConvert.DeserializeObject<List<clssGasto>>(json);
-                for (int j = 0; j < gastoList.Count; j++)
+                for (int i = 0; i < gastoList.Count; i++)
                 {
                     if (gastoList[j].Nombre.ToString() == txtbNombreDelGasto.Text)
                     {
-                        gastoList.Remove(gastoList[j]);
+                        gastoList.Remove(gastoList[i]);
                         MessageBox.Show($"El gasto {txtbNombreDelGasto.Text} fue eliminado correctamente.");
                         break;
                         j = 1;
@@ -259,7 +259,7 @@ namespace Registro_de_gastos
             }
             else
             {
-                MessageBox.Show($"Aún no se han ingresado gastos.");
+                MessageBox.Show($"AÃºn no se han ingresado gastos.");
             }
             json = JsonConvert.SerializeObject(gastoList);
             var sv = new StreamWriter(pathFile, false, Encoding.UTF8);
