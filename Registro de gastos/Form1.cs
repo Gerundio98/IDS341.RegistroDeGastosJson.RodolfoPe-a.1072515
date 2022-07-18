@@ -248,8 +248,8 @@ namespace Registro_de_gastos
                     {
                         gastoList.Remove(gastoList[i]);
                         MessageBox.Show($"El gasto {txtbNombreDelGasto.Text} fue eliminado correctamente.");
-                        break;
                         j = 1;
+                        break;
                     }
                 }
                 if (j == 0)
